@@ -9,36 +9,163 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg border-bottom" aria-label="Offcanvas navbar large">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" aria-label="Offcanvas navbar large">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Responsive offcanvas navbar</a>
+          <a class="navbar-brand" href="#">PelSem2</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-            <span class=""><i class="bi bi-list"></i></span>
+            <i class="bi bi-list"></i>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
-              <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Teams</a>
+                  <a class="nav-link" href="#team">Team</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Materi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#mat">Materials</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="src/img/laravel-icon.png" class="d-block mx-lg-auto img-fluid" alt="laravelicon" width="400" height="200" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome To This Website</h1>
+            <p class="lead">This website was created to complete Mr. Hafiizh's assignment. in it there are some materials that have been taught and have been summarized by this website.</p>
+            <div  class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="#team" id="btn-next" type="button" class="btn border-3 btn-lg px-4 me-md-2">Next <i class="bi bi-arrow-right-circle" style="color: red;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <div class="my-5 text-center">
+          <span><h3 id="team">Team</h3></span>
+        </div>
+        <div class="d-flex flax-wrap justify-content-center">
+          <div class="row gx-5 py-5">
+
+            <div class="col-6">
+              <div class="card" style="width: 18rem;">
+                <img src="src/img/jayus.jpg" class="card-img-top" alt="jayus">
+                <div class="card-body">
+                  <p class="card-text">Name : Jayus Titanio Fatihah <br><br> Kelas : XI RPL</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-6">
+              <div class="card" style="width: 18rem;">
+                <img src="src/img/farras.jpg" class="card-img-top" alt="farras">
+                <div class="card-body">
+                  <p class="card-text">Name : Muhammad Farras Syahputra <br> Kelas : XI RPL</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="container text-center py-5">
+        <div class="my-5 text-center">
+          <span><h3 id="mat">Materials</h3></span>
+        </div>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#why">
+        <u>Why Laravel ?</u>
+        </button>
+
+        <div class="modal fade" id="why" tabindex="-1" aria-labelledby="whyModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="whyModalLabel">Why Laravel ?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-start">
+                There are a variety of tools and frameworks available to you when building a web application. However, we believe Laravel is the best choice for building modern, full-stack web applications.
+                <br>
+                <br>
+                <b>A Progressive Framework</b>
+                <br>
+                We like to call Laravel a "progressive" framework. By that, we mean that Laravel grows with you.
+                <br>
+                <br>
+                <b>A Scalable Framework</b>
+                <br>
+                Laravel is incredibly scalable. Thanks to the scaling-friendly nature of PHP and Laravel's built-in support for fast, distributed cache systems like Redis, horizontal scaling with Laravel is a breeze. 
+                <br>
+                <br>
+                <b>A Community Framework</b>
+                <br>
+                Laravel combines the best packages in the PHP ecosystem to offer the most robust and developer friendly framework available.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#dep">
+          <u>Deployment</u>
+        </button>
+
+        <div class="modal fade" id="dep" tabindex="-1" aria-labelledby="depModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="depModalLabel">Deployment</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-start">
+                <b>Server Requirements</b>
+                <ul>
+                  <li>PHP >= 8.1</li>
+                  <li>Ctype PHP Extension</li>
+                  <li>cURL PHP Extension</li>
+                  <li>DOM PHP Extension</li>
+                  <li>Fileinfo PHP Extension</li>
+                  <li>Filter PHP Extension</li>
+                  <li>Hash PHP Extension</li>
+                  <li>Mbstring PHP Extension</li>
+                  <li>OpenSSL PHP Extension</li>
+                  <li>PCRE PHP Extension</li>
+                  <li>PDO PHP Extension</li>
+                  <li>Session PHP Extension</li>
+                  <li>Tokenizer PHP Extension</li>
+                  <li>XML PHP Extension</li>
+                </ul>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-5 border-top bg-black text-light">
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-white">© 2024 Company, Inc</span>
+        </div>
+  
+      </footer>
 
     <script src="src/bootstrap-5.3.3/js/bootstrap.min.js"></script>
 </body>
